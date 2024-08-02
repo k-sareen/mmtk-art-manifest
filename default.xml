@@ -142,7 +142,7 @@
   <project name="platform/external/rust/crates/libc" path="external/rust/crates/libc" revision="655aa7a62ef9d7455aba7e4563a0d967ce72a1fc" upstream="main" dest-branch="main" groups="pdk"/>
   <!-- MMTK-CHANGED: -->
   <project name="rust-log" path="external/rust/crates/log" remote="github" revision="mmtk-art" groups="pdk"/>
-  <project name="platform/external/rust/crates/memchr" path="external/rust/crates/memchr" revision="0fe4f8458e13207eb14a27df626706bb77138888" upstream="main" dest-branch="main" groups="pdk"/>
+  <project name="memchr" path="external/rust/crates/memchr" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="platform/external/rust/crates/once_cell" path="external/rust/crates/once_cell" revision="04a4b2360ab5c43cba2dfdb6aee889622f898ad4" upstream="main" dest-branch="main" groups="pdk"/>
   <project name="platform/external/rust/crates/os_str_bytes" path="external/rust/crates/os_str_bytes" revision="5f10413b13cb22f3e9dacf855aaa187c96501571" upstream="main" dest-branch="main" groups="pdk"/>
   <project name="platform/external/rust/crates/paste" path="external/rust/crates/paste" revision="9589cc91e96f869ffa8d8d3d244e3d2260ae6b82" upstream="main" dest-branch="main" groups="pdk"/>
@@ -288,7 +288,7 @@
   <project name="portable-atomic" path="external/rust/crates/portable-atomic" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="probe-rs" path="external/rust/crates/probe-rs" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="platform/external/rust/crates/proc-macro-error-attr" path="external/rust/crates/proc-macro-error-attr" revision="ee061705d4121a2435e3e354cb83cc8b0d87e80a" upstream="main" dest-branch="main" groups="pdk"/>
-  <project name="platform/external/rust/crates/proc-macro-error" path="external/rust/crates/proc-macro-error" revision="c022b640ee1bec7136cbd46ea514ccf834ee71e" upstream="main" dest-branch="main" groups="pdk"/>
+  <project name="platform/external/rust/crates/proc-macro-error" path="external/rust/crates/proc-macro-error" revision="c022b640ee1bec7136cbd46ea514ccf834ee71ef" upstream="main" dest-branch="main" groups="pdk"/>
   <project name="rayon-core" path="external/rust/crates/rayon-core" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="rayon" path="external/rust/crates/rayon" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="rust-atomic-traits" path="external/rust/crates/rust-atomic-traits" remote="github" revision="mmtk-art" groups="pdk"/>
