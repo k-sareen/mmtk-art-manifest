@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="github" fetch="ssh://git@github.com" />
+  <remote name="github" fetch=".."/>
   <remote name="aosp" fetch=".." review="https://android-review.googlesource.com/"/>
 
   <default remote="aosp" revision="main" sync-j="4"/>
 
-  <manifest-server url="http://android-smartsync.corp.google.com/android.googlesource.com/manifestserver"/>
+  <!-- <manifest-server url="http://android-smartsync.corp.google.com/android.googlesource.com/manifestserver"/> -->
 
   <project name="device/generic/art" revision="84c58b5290574b7f7b1626be0d1f275dfde19279" upstream="main" dest-branch="main" groups="pdk"/>
 
   <!-- MMTK-CHANGED: -->
-  <project name="k-sareen/art" path="art" remote="github" revision="mmtk-art-rebase" groups="pdk"/>
+  <project name="k-sareen/art" path="art" groups="pdk" remote="github" revision="mmtk-art-rebase" />
 
   <project name="platform/build" path="build/make" revision="2135347927cc189a96b8b79d365d64ea775867de" upstream="main" dest-branch="main" groups="pdk">
     <copyfile src="core/root.mk" dest="Makefile"/>
