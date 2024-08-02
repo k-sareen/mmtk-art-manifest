@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="github" fetch="https://github.com/k-sareen" />
-  <remote name="aosp" fetch="https://android.googlesource.com" review="https://android-review.googlesource.com/"/>
+  <remote name="github"
+          fetch="https://github.com/k-sareen" />
+
+  <remote name="aosp"
+          fetch="https://android.googlesource.com"
+          review="https://android-review.googlesource.com/" />
 
   <default remote="aosp" revision="main" sync-j="4"/>
 
@@ -261,8 +265,8 @@
 
   <!-- MMTK-ADDED: -->
   <project name="nlohmann-json" path="external/nlohmann-json" remote="github" revision="mmtk-art" groups="pdk"/>
-  <project name="android_logger" path="external/rust/crates/android_logger" revision="54d6e8af08a833a8cc77d6b0238c667fc3913562" upstream="main" dest-branch="main" groups="pdk"/>
-  <project name="android_log-sys" path="external/rust/crates/android_log-sys" revision="648ed5c3091506dbf98b545a757a24bf30ff69a3" upstream="main" dest-branch="main" groups="pdk"/>
+  <project name="platform/external/rust/crates/android_logger" path="external/rust/crates/android_logger" revision="54d6e8af08a833a8cc77d6b0238c667fc3913562" upstream="main" dest-branch="main" groups="pdk"/>
+  <project name="platform/external/rust/crates/android_log-sys" path="external/rust/crates/android_log-sys" revision="648ed5c3091506dbf98b545a757a24bf30ff69a3" upstream="main" dest-branch="main" groups="pdk"/>
   <project name="rust-atomic" path="external/rust/crates/atomic" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="atomic_refcell" path="external/rust/crates/atomic_refcell" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="bytemuck_derive" path="external/rust/crates/bytemuck_derive" remote="github" revision="mmtk-art" groups="pdk"/>
@@ -272,10 +276,10 @@
   <project name="crossbeam-epoch" path="external/rust/crates/crossbeam-epoch" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="crossbeam-queue" path="external/rust/crates/crossbeam-queue" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="crossbeam-utils" path="external/rust/crates/crossbeam-utils" remote="github" revision="mmtk-art" groups="pdk"/>
-  <project name="downcast-rs" path="external/rust/crates/downcast-rs" revision="a2e56ea98974240c3a1da89ff78a1e70d9ac340c" upstream="main" dest-branch="main" groups="pdk"/>
+  <project name="platform/external/rust/crates/downcast-rs" path="external/rust/crates/downcast-rs" revision="a2e56ea98974240c3a1da89ff78a1e70d9ac340c" upstream="main" dest-branch="main" groups="pdk"/>
   <project name="enum-map" path="external/rust/crates/enum-map" remote="github" revision="mmtk-art" groups="pdk"/>
-  <project name="env_logger" path="external/rust/crates/env_logger" revision="778df278e2eb9e9abe42c194dbe3ddeded34c0f6" upstream="main" dest-branch="main" groups="pdk"/>
-  <project name="lazy_static" path="external/rust/crates/lazy_static" revision="976d7b95042f92c51f8a0509cd9f9f3bf841b41d" upstream="main" dest-branch="main" groups="pdk"/>
+  <project name="platform/external/rust/crates/env_logger" path="external/rust/crates/env_logger" revision="778df278e2eb9e9abe42c194dbe3ddeded34c0f6" upstream="main" dest-branch="main" groups="pdk"/>
+  <project name="platform/external/rust/crates/lazy_static" path="external/rust/crates/lazy_static" revision="976d7b95042f92c51f8a0509cd9f9f3bf841b41d" upstream="main" dest-branch="main" groups="pdk"/>
   <project name="memoffset" path="external/rust/crates/memoffset" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="num_cpus" path="external/rust/crates/num_cpus" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="num-traits" path="external/rust/crates/num-traits" remote="github" revision="mmtk-art" groups="pdk"/>
@@ -283,16 +287,16 @@
   <project name="pfm" path="external/rust/crates/pfm" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="portable-atomic" path="external/rust/crates/portable-atomic" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="probe-rs" path="external/rust/crates/probe-rs" remote="github" revision="mmtk-art" groups="pdk"/>
-  <project name="proc-macro-error-attr" path="external/rust/crates/proc-macro-error-attr" revision="ee061705d4121a2435e3e354cb83cc8b0d87e80a" upstream="main" dest-branch="main" groups="pdk"/>
-  <project name="proc-macro-error" path="external/rust/crates/proc-macro-error" revision="c022b640ee1bec7136cbd46ea514ccf834ee71e" upstream="main" dest-branch="main" groups="pdk"/>
+  <project name="platform/external/rust/crates/proc-macro-error-attr" path="external/rust/crates/proc-macro-error-attr" revision="ee061705d4121a2435e3e354cb83cc8b0d87e80a" upstream="main" dest-branch="main" groups="pdk"/>
+  <project name="platform/external/rust/crates/proc-macro-error" path="external/rust/crates/proc-macro-error" revision="c022b640ee1bec7136cbd46ea514ccf834ee71e" upstream="main" dest-branch="main" groups="pdk"/>
   <project name="rayon-core" path="external/rust/crates/rayon-core" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="rayon" path="external/rust/crates/rayon" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="rust-atomic-traits" path="external/rust/crates/rust-atomic-traits" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="rust-delegate" path="external/rust/crates/rust-delegate" remote="github" revision="mmtk-art" groups="pdk"/>
-  <project name="rustversion" path="external/rust/crates/rustversion" revision="285a883e3b5eb4846fae687b47f6cfe23212e815" upstream="main" dest-branch="main" groups="pdk"/>
-  <project name="scopegaurd" path="external/rust/crates/scopegaurd" revision="303b2f7e0ae9cad412130aedd9e9da66158020c9" upstream="main" dest-branch="main" groups="pdk"/>
+  <project name="platform/external/rust/crates/rustversion" path="external/rust/crates/rustversion" revision="285a883e3b5eb4846fae687b47f6cfe23212e815" upstream="main" dest-branch="main" groups="pdk"/>
+  <project name="platform/external/rust/crates/scopegaurd" path="external/rust/crates/scopegaurd" revision="303b2f7e0ae9cad412130aedd9e9da66158020c9" upstream="main" dest-branch="main" groups="pdk"/>
   <project name="rust-spin" path="external/rust/crates/spin" remote="github" revision="mmtk-art" groups="pdk"/>
-  <project name="static_assertions" path="external/rust/crates/static_assertions" revision="fe7b4bbcd8a77faca169e2b04ee4982f4ada6a13" upstream="main" dest-branch="main" groups="pdk"/>
+  <project name="platform/external/rust/crates/static_assertions" path="external/rust/crates/static_assertions" revision="fe7b4bbcd8a77faca169e2b04ee4982f4ada6a13" upstream="main" dest-branch="main" groups="pdk"/>
   <project name="strum" path="external/rust/crates/strum" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="rust-sysinfo" path="external/rust/crates/sysinfo" remote="github" revision="mmtk-art" groups="pdk"/>
 
