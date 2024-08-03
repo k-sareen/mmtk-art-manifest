@@ -286,7 +286,7 @@
   <project name="num_cpus" path="external/rust/crates/num_cpus" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="num-traits" path="external/rust/crates/num-traits" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="rust-perf-event" path="external/rust/crates/perf-event" remote="github" revision="mmtk-art" groups="pdk"/>
-  <project name="pfm" path="external/rust/crates/pfm" remote="github" revision="mmtk-art" groups="pdk"/>
+  <!-- <project name="pfm" path="external/rust/crates/pfm" remote="github" revision="mmtk-art" groups="pdk"/> -->
   <project name="portable-atomic" path="external/rust/crates/portable-atomic" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="probe-rs" path="external/rust/crates/probe-rs" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="platform/external/rust/crates/proc-macro-error-attr" path="external/rust/crates/proc-macro-error-attr" revision="ee061705d4121a2435e3e354cb83cc8b0d87e80a" upstream="main" dest-branch="main" groups="pdk"/>
@@ -302,7 +302,7 @@
   <project name="strum" path="external/rust/crates/strum" remote="github" revision="mmtk-art" groups="pdk"/>
   <project name="rust-sysinfo" path="external/rust/crates/sysinfo" remote="github" revision="mmtk-art" groups="pdk"/>
 
-  <!-- MMTK-ADDED -->
+  <!-- MMTK-ADDED: -->
   <project name="mmtk-core" path="external/rust/crates/mmtk-core" remote="github" revision="main-art-rebase" groups="pdk"/>
   <project name="mmtk-art" path="mmtk-art" remote="github" revision="master" groups="pdk"/>
 
